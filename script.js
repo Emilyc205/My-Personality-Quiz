@@ -39,7 +39,7 @@ function sun() {
 }
 
 function updateResult() {
-  if (questionCount == 3) {
+  if (questionCount >== 3) {
     console.log("The quiz is done!")
   if (sunScore >= 2) {
     result.innerHTML = "You are a sun person!";
@@ -51,7 +51,7 @@ function updateResult() {
   }
 }
 function resetQuiz() {
-result.innerHTML = "You result is...";
+result.innerHTML = "Your result is...";
 sunScore =0;
 moonScore =0;
 questionCount =0;
