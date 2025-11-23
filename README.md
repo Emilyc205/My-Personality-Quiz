@@ -14,7 +14,7 @@ A short personality quiz that asks the user three questions to determine which p
   - CSS
   - JavaScript
 
-    This project is based with Girls Who Code starter instructions and requirements. I customized the original instructions given to create a restyled quiz with my own features and design. The instructions are listed below for reference. 
+    This project is based on the Girls Who Code starter instructions and requirements. I customized the original instructions given to create a restyled quiz with my own features and design. The instructions are listed below for reference. 
 
 # Personality Quiz Starter Code
 
