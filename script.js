@@ -39,7 +39,7 @@ function sun() {
 }
 
 function updateResult() {
-  if (questionCount >== 3) {
+  if (questionCount === 3) {
     console.log("The quiz is done!")
   if (sunScore >= 2) {
     result.innerHTML = "You are a sun person!";
@@ -48,7 +48,11 @@ function updateResult() {
     result.innerHTML = "You are a moon person!";
     console.log ("You are a moon person!");
 }
-  }
+   
+let buttons =document.querySelectorAll (".answer-choice button");
+    buttons.forEach(btn=> btn.disabled = true);
+    restart.disabled = false;
+}
 }
 function resetQuiz() {
 result.innerHTML = "Your result is...";
@@ -56,4 +60,9 @@ sunScore =0;
 moonScore =0;
 questionCount =0;
 console.log ("Reset:", sunScore, moonScore, questionCount);
+
+let buttons = document.querySelectorAll(".answer-choice button");
+buttons.forEach(btn=>btn.disabled =false);
+restart.disabled =false;
 }
+
