@@ -48,21 +48,20 @@ function updateResult() {
     result.innerHTML = "You are a moon person!";
     console.log ("You are a moon person!");
 }
-   
+    
 let buttons =document.querySelectorAll (".answer-choice button");
     buttons.forEach(btn=> btn.disabled = true);
     restart.disabled = false;
-}
-}
+ }
+}  
 function resetQuiz() {
-result.innerHTML = "Your result is...";
 sunScore =0;
 moonScore =0;
 questionCount =0;
-console.log ("Reset:", sunScore, moonScore, questionCount);
-
+result.innerHTML = "Your result is...";
 let buttons = document.querySelectorAll(".answer-choice button");
 buttons.forEach(btn=>btn.disabled =false);
 restart.disabled =false;
+  console.log ("Reset:", sunScore, moonScore, questionCount);
 }
 
